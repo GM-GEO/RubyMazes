@@ -1,7 +1,7 @@
 # RubyMazes
 
-##Binary Tree Maze
+## Binary Tree Maze
 
-##Sidewinder Maze
+## Sidewinder Maze
 
-##Dijkstra's Algorithm Variants
+## Dijkstra's Algorithm Variants
