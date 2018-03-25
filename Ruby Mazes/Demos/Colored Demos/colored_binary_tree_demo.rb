@@ -1,7 +1,7 @@
-require File.expand_path("../../../Ruby Mazes/Core/colored_grid", __FILE__)
-require File.expand_path("../../../Ruby Mazes/Core/Generation Algorithms/binary_tree", __FILE__)
+require File.expand_path("../../../../Ruby Mazes/Core/colored_grid", __FILE__)
+require File.expand_path("../../../../Ruby Mazes/Core/Generation Algorithms/binary_tree", __FILE__)
 
-grid = ColoredGrid.new(50, 50)
+grid = ColoredGrid.new(100, 100)
 BinaryTree.on(grid)
 
 start = grid[grid.rows / 2, grid.columns / 2]
