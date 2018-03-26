@@ -5,14 +5,17 @@ class Distances
         @cells[@root] = 0
     end
 
+    #Gets cell from cell:distance hash.
     def [](cell)
         @cells[cell]
     end
 
+    #Sets cell hash where cell is key and distance is value
     def []=(cell, distance)
         @cells[cell] = distance
     end
 
+    #returns list of cells and their distances.
     def cells
         @cells.keys
     end
