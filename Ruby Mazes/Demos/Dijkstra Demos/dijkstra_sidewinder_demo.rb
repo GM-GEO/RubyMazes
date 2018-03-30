@@ -1,5 +1,5 @@
-require File.expand_path("../../../Ruby Mazes/Core/distance_grid", __FILE__)
-require File.expand_path("../../../Ruby Mazes/Core/Generation Algorithms/sidewinder", __FILE__)
+require_relative File.expand_path("../../../Core/distance_grid", __FILE__)
+require_relative File.expand_path("../../../Core/Generation Algorithms/sidewinder", __FILE__)
 
 grid = DistanceGrid.new(10, 10)
 Sidewinder.on(grid)

@@ -13,20 +13,18 @@ class Cell
         @links = {}
     end
 
-    =begin
-    Takes in a cell, and adds the cell as a link.
-    Also has bidi parameter, which sets link on both sides.
-    =end
+    
+    #Takes in a cell, and adds the cell as a link.
+    #Also has bidi parameter, which sets link on both sides.
+    
     def link(cell, bidi=true)
         @links[cell] = true
         cell.link(self, false) if bidi
         self
     end
 
-    =begin
-    Takes in a cell, and removes the cell as a link.
-    Also has bidi parameter, which removes link on both sides.
-    =end
+    #Takes in a cell, and removes the cell as a link.
+    #Also has bidi parameter, which removes link on both sides.
     def unlink(cell, bidi=true)
         @links.delete(cell)
         cell.unlink(self, false) if bidi
